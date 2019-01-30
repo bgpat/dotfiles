@@ -1,0 +1,3 @@
+[submodule "detectindent"]
+	ignore = dirty
+	path = .vim/pack/submodules/start/detectindent
