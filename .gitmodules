@@ -1,6 +1,16 @@
-[submodule "detectindent"]
-	ignore = dirty
+[submodule ".vim/pack/submodules/start/ale"]
+	path = .vim/pack/submodules/start/ale
+	url = https://github.com/w0rp/ale
+[submodule ".vim/pack/submodules/start/detectindent"]
 	path = .vim/pack/submodules/start/detectindent
+	url = https://github.com/ciaranm/detectindent
+	ignore = dirty
+[submodule ".vim/pack/submodules/start/lightline.vim"]
+	path = .vim/pack/submodules/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
 [submodule ".vim/pack/submodules/start/vim-go"]
 	path = .vim/pack/submodules/start/vim-go
 	url = https://github.com/fatih/vim-go
+[submodule ".vim/pack/submodules/opt/molokai"]
+	path = .vim/pack/submodules/opt/molokai
+	url = https://github.com/tomasr/molokai
