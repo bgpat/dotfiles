@@ -221,4 +221,10 @@ let g:detectindent_preferred_when_mixed = 1
 
 "}}}
 
+" vim-go {{{
+
+filetype plugin indent on
+
+" }}}
+
 " }}}
