@@ -14,3 +14,6 @@
 [submodule ".vim/pack/submodules/opt/molokai"]
 	path = .vim/pack/submodules/opt/molokai
 	url = https://github.com/tomasr/molokai
+[submodule ".vim/pack/submodules/start/vim-fugitive"]
+	path = .vim/pack/submodules/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
