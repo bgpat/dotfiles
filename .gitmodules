@@ -20,3 +20,6 @@
 [submodule ".vim/pack/submodules/start/vim-terraform"]
 	path = .vim/pack/submodules/start/vim-terraform
 	url = https://github.com/hashivim/vim-terraform
+[submodule ".vim/pack/submodules/start/vim-prettier"]
+	path = .vim/pack/submodules/start/vim-prettier
+	url = https://github.com/prettier/vim-prettier
