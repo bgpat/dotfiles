@@ -27,6 +27,9 @@ set wildmode=list
 " move to other line
 set whichwrap=h,l,<,>,[,],b,s
 
+" delete character by backspace
+set backspace=indent,eol,start
+
 " yank to clipboard
 if has("clipboard")
 	set clipboard=unnamed
