@@ -22,7 +22,7 @@ set fileformats=unix,dos,mac
 set fileformat=unix
 
 " command completion mode
-set wildmode=list
+set wildmode=list:longest
 
 " move to other line
 set whichwrap=h,l,<,>,[,],b,s
