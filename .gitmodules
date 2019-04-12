@@ -23,3 +23,6 @@
 [submodule ".vim/pack/submodules/start/vim-prettier"]
 	path = .vim/pack/submodules/start/vim-prettier
 	url = https://github.com/prettier/vim-prettier
+[submodule ".vim/pack/submodules/start/Dockerfile.vim"]
+	path = .vim/pack/submodules/start/Dockerfile.vim
+	url = https://github.com/ekalinin/Dockerfile.vim
