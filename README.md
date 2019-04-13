@@ -7,3 +7,11 @@
 l______/\___/I__Jl_ll_ll_l\___/\___/
 
 ```
+
+## Setup
+
+```bash
+git clone https://github.com/bgpat/dotfiles ~/src/github.com/bgpat/dotfiles
+cd ~/src/github.com/bgpat/dotfiles
+./setup.sh
+```
