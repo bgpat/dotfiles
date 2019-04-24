@@ -38,6 +38,10 @@ if has("clipboard")
 	endif
 endif
 
+" cancel keymap
+" - close quickfix window
+" - clear highlighting
+nnoremap <silent> <Esc><Esc> :ccl<CR>:nohlsearch<CR>
 
 " Indent {{{
 
@@ -58,9 +62,9 @@ set softtabstop=2
 set shiftround
 
 " indent visual selected code
-vmap > >gv
-vmap < <gv
-vmap = =gv
+vnoremap > >gv
+vnoremap < <gv
+vnoremap = =gv
 
 " }}}
 
@@ -82,9 +86,6 @@ nnoremap n nzz
 nnoremap N Nzz
 nnoremap * *zz
 nnoremap # #zz
-
-" clear highlighting
-nmap <silent> <Esc><Esc> :nohlsearch<CR>
 
 " }}}
 
@@ -182,7 +183,7 @@ set display+=uhex
 let mapleader = " "
 
 " save with sudo
-cmap w!! w !sudo tee % > /dev/null
+cnoremap w!!<CR> w !sudo tee % > /dev/null<CR>
 
 " Move to edge
 noremap H ^
@@ -227,6 +228,11 @@ let g:detectindent_preferred_when_mixed = 1
 " vim-go {{{
 
 filetype plugin indent on
+autocmd FileType go nnoremap <silent> <leader>gd <C-W>v:GoDef<CR>
+autocmd FileType go nnoremap <silent> <leader>gc :GoCoverageToggle<CR>
+autocmd FileType go nnoremap <silent> <leader>gi :GoImports<CR>
+autocmd FileType go nnoremap <silent> <leader>gl :GoMetaLinter<CR>
+autocmd FileType go nnoremap <silent> <Esc><Esc> :ccl<CR>:nohlsearch<CR>:GoCoverageClear<CR>
 
 " }}}
 
@@ -246,6 +252,7 @@ let g:prettier#config#bracket_spacing = 'true'
 let g:prettier#config#trailing_comma = 'all'
 
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.graphql,*.md,*.vue,*.html PrettierAsync
+nnoremap <silent> <leader>p :Prettier<CR>
 
 " }}}
 
