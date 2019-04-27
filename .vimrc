@@ -41,7 +41,7 @@ endif
 " cancel keymap
 " - close quickfix window
 " - clear highlighting
-nnoremap <silent> <Esc><Esc> :ccl<CR>:nohlsearch<CR>
+nnoremap <silent> <Esc><Esc> :ccl<CR>:lcl<CR>:nohlsearch<CR>
 
 " Indent {{{
 
@@ -232,7 +232,7 @@ autocmd FileType go nnoremap <silent> <leader>gd <C-W>v:GoDef<CR>
 autocmd FileType go nnoremap <silent> <leader>gc :GoCoverageToggle<CR>
 autocmd FileType go nnoremap <silent> <leader>gi :GoImports<CR>
 autocmd FileType go nnoremap <silent> <leader>gl :GoMetaLinter<CR>
-autocmd FileType go nnoremap <silent> <Esc><Esc> :ccl<CR>:nohlsearch<CR>:GoCoverageClear<CR>
+autocmd FileType go nnoremap <silent> <Esc><Esc> :ccl<CR>:lcl<CR>:nohlsearch<CR>:GoCoverageClear<CR>
 
 " }}}
 
