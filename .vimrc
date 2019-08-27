@@ -190,6 +190,9 @@ noremap H ^
 noremap L $
 vnoremap L g_
 
+" Execute with QuickRun
+noremap <leader>r :QuickRun<CR>
+
 " }}}
 
 
