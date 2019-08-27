@@ -26,3 +26,6 @@
 [submodule ".vim/pack/submodules/start/Dockerfile.vim"]
 	path = .vim/pack/submodules/start/Dockerfile.vim
 	url = https://github.com/ekalinin/Dockerfile.vim
+[submodule ".vim/pack/submodules/start/vim-quickrun"]
+	path = .vim/pack/submodules/start/vim-quickrun
+	url = https://github.com/thinca/vim-quickrun
