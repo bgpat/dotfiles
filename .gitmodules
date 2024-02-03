@@ -36,3 +36,6 @@
 [submodule ".vim/pack/submodules/start/typescript-vim"]
 	path = .vim/pack/submodules/start/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim
+[submodule ".vim/pack/submodules/start/vim-openscad"]
+	path = .vim/pack/submodules/start/vim-openscad
+	url = https://github.com/sirtaj/vim-openscad
